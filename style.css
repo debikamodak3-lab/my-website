@@ -1,0 +1,281 @@
+/* ============================= */
+/* GLOBAL SETTINGS */
+/* ============================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(to bottom, #fff8f0, #ffe0b2);
+  overflow-x: hidden;
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+  box-sizing: border-box;
+  padding-bottom: 60px;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+header {
+  text-align: center;
+  background: linear-gradient(45deg, #ff7043, #ff5722);
+  color: white;
+  padding: 50px 20px;
+  animation: fadeDown 0.6s ease-in-out;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 48px;
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+}
+
+header p {
+  font-size: 22px;
+}
+
+.restaurant-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 15px;
+}
+
+/* ============================= */
+/* SECTION TITLE */
+/* ============================= */
+
+.section-title {
+  text-align: center;
+  color: #bf360c;
+  font-size: 40px;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+/* ============================= */
+/* ACCORDION BUTTONS */
+/* ============================= */
+
+.accordion-btn {
+  width: 90%;
+  margin: 15px auto;
+  padding: 22px;
+  font-size: 24px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+  display: block;
+  color: white;
+}
+
+/* Different Colors */
+.accordion-btn:nth-of-type(1) { background: #2e7d32; }
+.accordion-btn:nth-of-type(2) { background: #1565c0; }
+.accordion-btn:nth-of-type(3) { background: #6a1b9a; }
+.accordion-btn:nth-of-type(4) { background: #c62828; }
+.accordion-btn:nth-of-type(5) { background: #ef6c00; }
+.accordion-btn:nth-of-type(6) { background: #00838f; }
+.accordion-btn:nth-of-type(7) { background: #5d4037; }
+
+.accordion-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* ============================= */
+/* ACCORDION CONTENT */
+/* ============================= */
+
+.accordion-content {
+  display: none;
+  padding: 25px;
+  background: #fff3e0;
+  width: 95%;
+  margin: auto;
+  border-radius: 20px;
+  animation: fadeIn 0.3s ease-in-out;
+  font-size: 19px;
+}
+
+/* ============================= */
+/* VEG / NONVEG TITLE */
+/* ============================= */
+
+.veg, .nonveg {
+  font-size: 22px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* ============================= */
+/* MENU ITEM CARD */
+/* ============================= */
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+  background: white;
+  padding: 20px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
+
+.item-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.item-name {
+  font-size: 22px;
+  font-weight: bold;
+  color: #6a1b9a;
+}
+
+.item-price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+/* ============================= */
+/* CART */
+/* ============================= */
+
+h2 {
+  color: #bf360c;
+  margin-left: 20px;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+#cart {
+  font-size: 18px;
+  margin: 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+#cart li {
+  background: #fff;
+  margin: 12px 0;
+  padding: 16px 18px;
+  border-radius: 14px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#total {
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+/* ============================= */
+/* DELETE BUTTON */
+/* ============================= */
+
+.delete-btn {
+  background: red;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+.delete-btn:hover {
+  background: darkred;
+  transform: scale(1.1);
+}
+
+/* ============================= */
+/* MAIN BUTTONS */
+/* ============================= */
+
+button:not(.delete-btn) {
+  padding: 18px 35px;
+  margin: 20px;
+  background: linear-gradient(45deg, green, darkgreen);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+button:not(.delete-btn):hover {
+  transform: scale(1.06);
+}
+
+/* ============================= */
+/* INPUT FIELDS */
+/* ============================= */
+
+input, select {
+  width: 92%;
+  margin: 14px 20px;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+}
+
+/* ============================= */
+/* MAP */
+/* ============================= */
+
+iframe {
+  margin-top: 15px;
+  border-radius: 15px;
+  width: 95%;
+  margin-left: 2.5%;
+}
+
+/* ============================= */
+/* ANIMATIONS */
+/* ============================= */
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+  }
