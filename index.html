@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mom's touch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>mom's touch</h1>
+  <p>Authentic Taste of India</p>
+  <img src="images/restaurant.jpg" class="restaurant-img">
+</header>
+
+<h2 class="section-title">Menu</h2>
+
+<div class="accordion">
+
+<!-- 🥟 Starters -->
+<button class="accordion-btn">🥟 Starters (Veg & Non-Veg)</button>
+<div class="accordion-content">
+
+<h3 class="veg">🌱 Vegetarian</h3>
+
+<div class="item" onclick="addToCart('Veg Samosa (2 pcs)',120)">
+<img src="images/veg-samosa.jpg">
+<span>Veg Samosa (2 pcs) – &#8377;120</span>
+</div>
+
+<div class="item" onclick="addToCart('Paneer Tikka',280)">
+<img src="images/paneer-tikka.jpg">
+<span>Paneer Tikka – &#8377;280</span>
+</div>
+
+<div class="item" onclick="addToCart('Hara Bhara Kebab',240)">
+<img src="images/hara-bhara-kebab.jpg">
+<span>Hara Bhara Kebab – &#8377;240</span>
+</div>
+
+<div class="item" onclick="addToCart('Crispy Corn Chaat',180)">
+<img src="images/crispy-corn-chaat.jpg">
+<span>Crispy Corn Chaat – &#8377;180</span>
+</div>
+
+<h3 class="nonveg">🍗 Non-Vegetarian</h3>
+
+<div class="item" onclick="addToCart('Chicken Tikka',320)">
+<img src="images/chicken-tikka.jpg">
+<span>Chicken Tikka – &#8377;320</span>
+</div>
+
+<div class="item" onclick="addToCart('Chicken Malai Kebab',340)">
+<img src="images/chicken-malai-kebab.jpg">
+<span>Chicken Malai Kebab – &#8377;340</span>
+</div>
+
+<div class="item" onclick="addToCart('Mutton Seekh Kebab',380)">
+<img src="images/mutton-seekh-kebab.jpg">
+<span>Mutton Seekh Kebab – &#8377;380</span>
+</div>
+
+<div class="item" onclick="addToCart('Tandoori Chicken Half',350)">
+<img src="images/tandoori-chicken.jpg">
+<span>Tandoori Chicken (Half) – &#8377;350</span>
+</div>
+
+<div class="item" onclick="addToCart('Tandoori Chicken Full',650)">
+<img src="images/tandoori-chicken.jpg">
+<span>Tandoori Chicken (Full) – &#8377;650</span>
+</div>
+
+</div>
+
+<!-- 🍲 Soups -->
+<button class="accordion-btn">🍲 Soups</button>
+<div class="accordion-content">
+
+<div class="item" onclick="addToCart('Tomato Shorba',150)">
+<img src="images/tomato-shorba.jpg">
+<span>Tomato Shorba – &#8377;150</span>
+</div>
+
+<div class="item" onclick="addToCart('Sweet Corn Soup Veg',160)">
+<img src="images/sweet-corn-soup.jpg">
+<span>Sweet Corn Soup (Veg) – &#8377;160</span>
+</div>
+
+<div class="item" onclick="addToCart('Sweet Corn Soup Chicken',180)">
+<img src="images/sweet-corn-soup.jpg">
+<span>Sweet Corn Soup (Chicken) – &#8377;180</span>
+</div>
+
+<div class="item" onclick="addToCart('Manchow Soup Veg',170)">
+<img src="images/manchow-soup.jpg">
+<span>Manchow Soup (Veg) – &#8377;170</span>
+</div>
+
+<div class="item" onclick="addToCart('Manchow Soup Chicken',190)">
+<img src="images/manchow-soup.jpg">
+<span>Manchow Soup (Chicken) – &#8377;190</span>
+</div>
+
+</div>
+
+<!-- 🍛 Main Course – Vegetarian -->
+<button class="accordion-btn">🍛 Main Course – Vegetarian</button>
+<div class="accordion-content">
+
+<div class="item" onclick="addToCart('Paneer Butter Masala',320)">
+<img src="images/paneer-butter-masala.jpg">
+<span>Paneer Butter Masala – &#8377;320</span>
+</div>
+
+<div class="item" onclick="addToCart('Kadai Paneer',300)">
+<img src="images/kadai-paneer.jpg">
+<span>Kadai Paneer – &#8377;300</span>
+</div>
+
+<div class="item" onclick="addToCart('Shahi Paneer',330)">
+<img src="images/shahi-paneer.jpg">
+<span>Shahi Paneer – &#8377;330</span>
+</div>
+
+<div class="item" onclick="addToCart('Dal Makhani',260)">
+<img src="images/dal-makhani.jpg">
+<span>Dal Makhani – &#8377;260</span>
+</div>
+
+<div class="item" onclick="addToCart('Dal Tadka',220)">
+<img src="images/dal-tadka.jpg">
+<span>Dal Tadka – &#8377;220</span>
+</div>
+
+<div class="item" onclick="addToCart('Mix Veg Curry',240)">
+<img src="images/mix-veg-curry.jpg">
+<span>Mix Veg Curry – &#8377;240</span>
+</div>
+
+<div class="item" onclick="addToCart('Chole Masala',230)">
+<img src="images/chole-masala.jpg">
+<span>Chole Masala – &#8377;230</span>
+</div>
+
+<div class="item" onclick="addToCart('Malai Kofta',300)">
+<img src="images/malai-kofta.jpg">
+<span>Malai Kofta – &#8377;300</span>
+</div>
+
+</div>
+
+<!-- 🍖 Main Course – Non-Vegetarian -->
+<button class="accordion-btn">🍖 Main Course – Non-Vegetarian</button>
+<div class="accordion-content">
+
+<div class="item" onclick="addToCart('Butter Chicken',380)">
+<img src="images/butter-chicken.jpg">
+<span>Butter Chicken – &#8377;380</span>
+</div>
+
+<div class="item" onclick="addToCart('Chicken Curry',320)">
+<img src="images/chicken-curry.jpg">
+<span>Chicken Curry – &#8377;320</span>
+</div>
+
+<div class="item" onclick="addToCart('Chicken Kadai',350)">
+<img src="images/chicken-kadai.jpg">
+<span>Chicken Kadai – &#8377;350</span>
+</div>
+
+<div class="item" onclick="addToCart('Mutton Rogan Josh',420)">
+<img src="images/mutton-rogan-josh.jpg">
+<span>Mutton Rogan Josh – &#8377;420</span>
+</div>
+
+<div class="item" onclick="addToCart('Mutton Curry',400)">
+<img src="images/mutton-curry.jpg">
+<span>Mutton Curry – &#8377;400</span>
+</div>
+
+<div class="item" onclick="addToCart('Fish Curry',360)">
+<img src="images/fish-curry.jpg">
+<span>Fish Curry – &#8377;360</span>
+</div>
+
+<div class="item" onclick="addToCart('Prawn Masala',420)">
+<img src="images/prawn-masala.jpg">
+<span>Prawn Masala – &#8377;420</span>
+</div>
+
+</div>
+
+<!-- 🍚 Biryani & Rice -->
+<button class="accordion-btn">🍚 Biryani & Rice</button>
+<div class="accordion-content">
+
+<div class="item" onclick="addToCart('Veg Biryani',240)">
+<img src="images/veg-biryani.jpg">
+<span>Veg Biryani – &#8377;240</span>
+</div>
+
+<div class="item" onclick="addToCart('Paneer Biryani',280)">
+<img src="images/paneer-biryani.jpg">
+<span>Paneer Biryani – &#8377;280</span>
+</div>
+
+<div class="item" onclick="addToCart('Chicken Biryani',320)">
+<img src="images/chicken-biryani.jpg">
+<span>Chicken Biryani – &#8377;320</span>
+</div>
+
+<div class="item" onclick="addToCart('Mutton Biryani',420)">
+<img src="images/mutton-biryani.jpg">
+<span>Mutton Biryani – &#8377;420</span>
+</div>
+
+<div class="item" onclick="addToCart('Jeera Rice',180)">
+<img src="images/jeera-rice.jpg">
+<span>Jeera Rice – &#8377;180</span>
+</div>
+
+<div class="item" onclick="addToCart('Steamed Rice',150)">
+<img src="images/steamed-rice.jpg">
+<span>Steamed Rice – &#8377;150</span>
+</div>
+
+<div class="item" onclick="addToCart('Peas Pulao',220)">
+<img src="images/peas-pulao.jpg">
+<span>Peas Pulao – &#8377;220</span>
+</div>
+
+</div>
+
+<!-- 🫓 Indian Breads -->
+<button class="accordion-btn">🫓 Indian Breads (From Tandoor)</button>
+<div class="accordion-content">
+
+<div class="item" onclick="addToCart('Plain Roti',25)">
+<img src="images/roti.jpg">
+<span>Plain Roti – &#8377;25</span>
+</div>
+
+<div class="item" onclick="addToCart('Butter Roti',35)">
+<img src="images/roti.jpg">
+<span>Butter Roti – &#8377;35</span>
+</div>
+
+<div class="item" onclick="addToCart('Plain Naan',40)">
+<img src="images/naan.jpg">
+<span>Plain Naan – &#8377;40</span>
+</div>
+
+<div class="item" onclick="addToCart('Butter Naan',50)">
+<img src="images/naan.jpg">
+<span>Butter Naan – &#8377;50</span>
+</div>
+
+<div class="item" onclick="addToCart('Garlic Naan',70)">
+<img src="images/naan.jpg">
+<span>Garlic Naan – &#8377;70</span>
+</div>
+
+<div class="item" onclick="addToCart('Lachha Paratha',60)">
+<img src="images/paratha.jpg">
+<span>Lachha Paratha – &#8377;60</span>
+</div>
+
+<div class="item" onclick="addToCart('Stuffed Kulcha',80)">
+<img src="images/kulcha.jpg">
+<span>Stuffed Kulcha – &#8377;80</span>
+</div>
+
+</div>
+
+<!-- 🥗 Accompaniments -->
+<button class="accordion-btn">🥗 Accompaniments</button>
+<div class="accordion-content">
+
+<div class="item" onclick="addToCart('Green Salad',120)">
+<img src="images/salad.jpg">
+<span>Green Salad – &#8377;120</span>
+</div>
+
+<div class="item" onclick="addToCart('Boondi Raita',120)">
+<img src="images/raita.jpg">
+<span>Boondi Raita – &#8377;120</span>
+</div>
+
+<div class="item" onclick="addToCart('Plain Curd',100)">
+<img src="images/curd.jpg">
+<span>Plain Curd – &#8377;100</span>
+</div>
+
+</div>
+
+</div>
+
+<h2>🛒 Cart</h2>
+<ul id="cart"></ul>
+<h3>Total: &#8377;<span id="total">0</span></h3>
+
+<h2>Payment Method</h2>
+
+<p><b>Pay To Mobile Number (UPI/PhonePe/GPay): 9932949603</b></p>
+
+<select id="payment">
+<option>UPI (Pay to 9932949603)</option>
+<option>PhonePe (9932949603)</option>
+<option>Google Pay (9932949603)</option>
+<option>Paytm (9932949603)</option>
+<option>Cash on Delivery</option>
+<option>Bank Transfer</option>
+</select>
+
+<div id="bank-options">
+<p>Select Bank (All Major Indian Banks):</p>
+<select>
+<option>State Bank of India (SBI)</option>
+<option>HDFC Bank</option>
+<option>Punjab National Bank (PNB)</option>
+<option>Bank of Baroda</option>
+<option>Canara Bank</option>
+<option>Union Bank of India</option>
+<option>Indian Bank</option>
+<option>Bank of India</option>
+<option>Central Bank of India</option>
+<option>Indian Overseas Bank</option>
+<option>UCO Bank</option>
+<option>Axis Bank</option>
+<option>ICICI Bank</option>
+<option>IDBI Bank</option>
+<option>Kotak Mahindra Bank</option>
+<option>IndusInd Bank</option>
+<option>Yes Bank</option>
+<option>Bandhan Bank</option>
+<option>RBL Bank</option>
+<option>South Indian Bank</option>
+<option>Karnataka Bank</option>
+<option>Federal Bank</option>
+<option>Karur Vysya Bank</option>
+<option>Tamilnad Mercantile Bank</option>
+</select>
+</div>
+
+<button onclick="placeOrder()">Order Now</button>
+
+<h2>Book Table</h2>
+<input type="date">
+<input type="time">
+<input type="number" placeholder="Number of Guests">
+<button>Book Now</button>
+
+<h2>Location</h2>
+<p>Contact: 9932949603</p>
+<p>Address: Ghatal CBS Mall, West Medinipur, West Bengal, India</p>
+
+<iframe
+src="https://www.google.com/maps?q=Ghatal+CBS+Mall+West+Medinipur&output=embed"
+width="100%"
+height="300"
+style="border:0;">
+</iframe>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
